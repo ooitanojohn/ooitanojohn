@@ -6,6 +6,10 @@
   - ### Need to disable some ESLint rules
   - [ESlintルールを無効にしろ](https://nextjs.org/docs/basic-features/eslint#disabling-rules)
     - .eslintrc.jsonに追記した
+    - 調べたよ [ESlintが暴れてる](https://stackoverflow.com/questions/43177074/how-to-fix-this-violation-of-this-react-no-unescaped-entitie-of-eslint-rule)
+    - 消して再buildしたらerr出なかった。謎
+    - [フォント最適化](https://nextjs.org/docs/messages/no-page-custom-font)
+      - buildした所、関係なかったっぽい
 
 - ## 再ビルド
   - Checking validity of types

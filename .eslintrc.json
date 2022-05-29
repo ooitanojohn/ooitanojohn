@@ -1,7 +1,7 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "react/no-unescaped-entities": 2, // エスケープ文字を使用して書かないと駄目な文字がある 0 = off, 1 = warn, 2 = error
+    "@next/next/no-page-custom-font": 2 // フォント最適化しないなら
   }
 }
