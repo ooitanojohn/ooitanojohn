@@ -1,5 +1,11 @@
 {
-
+"test": {
+		"prefix": "tes",
+		"body": [
+      "okokok"
+		],
+		"description": "test"
+	},
 	"Image": {
 		"prefix": "<Im",
 		"body": [
