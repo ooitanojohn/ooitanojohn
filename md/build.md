@@ -57,3 +57,4 @@
   - For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'yarn add sharp', and Next.js will use it automatically for Image Optimization.
 Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
   - 画像最適化して～
+  - npm i sharp
