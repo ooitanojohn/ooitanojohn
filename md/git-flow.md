@@ -5,6 +5,8 @@
   - masterをfetchする
   - develop ⇔ featureで開発後merge
   - developで確認後 ⇔ releaseにmerge
+  - git merge br
+  - git co
 ## remote で master release hotfix
   - developで開発したものをreleaseにmergeしてreleaseブランチにpush
   - releaseにfetchしたものをdevelopにmerge

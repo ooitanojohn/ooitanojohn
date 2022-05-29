@@ -1,0 +1,12 @@
+{
+  "[Javascript React]":  {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true,
+    "editor.snippetSuggestions": "top"
+    },
+    "[Javascript]":  {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true,
+    "editor.snippetSuggestions": "top"
+    }
+}

@@ -9,7 +9,7 @@
   - [git-flow](md/git-flow.md)
   - [Link SSG SSR SPA](md/lesson1~2.md)
   - [build](md/build.md)
-  - [asset img css](md/)
+  - [asset img css](md/lesson3.md)
 
 ## api
   - [github APIからリポジトリ一覧取ってきて表示](https://maku77.github.io/git/github/github-rest-api.html)
