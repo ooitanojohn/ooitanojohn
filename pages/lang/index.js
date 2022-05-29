@@ -9,7 +9,6 @@ export default function Index() {
         <link rel="icon" href="/test1.jpg"></link>
       </Head>
       <h1>document設定用ファイル</h1>
-      <Link href="/lang/darkmode"><a className=''>darkmode</a></Link>
       <Link href="/"><a>Index.jsへ</a></Link>
     </>
   )
