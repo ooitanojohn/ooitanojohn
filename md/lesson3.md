@@ -14,6 +14,14 @@
     - <head> タグに変更を加える方法 <Head>コンポーネントをlayoutとかで作るのかも
     - [lang 属性を加えるといったように <html> をカスタマイズしたい場合は、カスタムの Document コンポーネントを作成することで実現](https://nextjs.org/docs/advanced-features/custom-document)
     - pages/_document.jsにテンプレ作れるらしい 日本語切り替えとか darkmodeとかどこで実装？？
+    - HTml body設定を変更する場合のファイル == posts/_document.js
   - ### CSS モジュールを使ってスタイルされた再利用可能な React コンポーネントを作成する方法
+    - いくつかのCSSの書き方
+      - <style jsx></style> で page/*js内に直接書く
   - ### pages/_app.js の中にグローバル CSS を追加する方法
-  - ### Next.js においてスタイリングを行ううえでのいくつかの便利な Tips
+    - どのページでも実行されるため肥大化するのはよくない
+    - destyle.cssなどはここで読み込もう
+  - ### ページごとにLayoutを変更する場合componentsにgetLayoutする
+    - コンポーネント名は変えれないがファイル名は変える
+    - https://weseek.co.jp/tech/733/
+

@@ -26,4 +26,8 @@ author: You
 #### try
 #### catch
 - 引数に発生した例外が格納される
+- PDOstatements
 #### finaly
+
+### bind関連
+- 代入値にはsqlの%%などの値を含める
