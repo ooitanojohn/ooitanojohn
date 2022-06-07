@@ -2,7 +2,7 @@
   - ### ルーティング
     - nextjsにおけるページとは
     - pagesディレクトリに存在するファイルからエクスポートされるreactコンポーネント
-    - pages/index.js は / に pages/posts/first-post.js は /posts/first-post としてルーティング
+    - pages/index.js は / に pages/posts/posts.js は /posts/posts としてルーティング
     - pages/posts/index.js は /postsとしてルーティングされる
   - ### ページ内の記述
     - pageはjsx記法で書き,reactコンポーネントを使う

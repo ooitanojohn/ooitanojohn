@@ -1,30 +1,31 @@
-import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
+import Head from 'next/head'
 import Link from 'next/link'
+import Header from '../components/header'
+import Footer from '../components/footer'
+import { getSortedPostsData } from '../lib/md' // md解析
 
-
-// mdから
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+export async function getStaticProps() { // ファイルからmd取得
+  const allPostsData = getSortedPostsData()
   return {
     props: {
-      allPostsData,
-    },
-  };
+      allPostsData
+    }
+  }
 }
-export default function Home({ allPostsData }) {
+export default function Index({ allPostsData }) {
   return (
-    <Layout home>
-      <Head>…</Head>
-      <Link href="posts/">index.jsへ</Link>
-      <section className={utilStyles.headingMd}>…</section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+    <>
+      <Head>
+        <title>ooitanojohn</title> {/*title*/}
+        <link rel="icon" href="/favicon.ico" /> {/* icon */}
+      </Head>
+      <Header></Header>
+      <main>
+        <h1 className='display-none'>ooitanojohn is blog</h1>
+        <Link href="./posts/post"><a>記事一覧タイトル</a></Link>
+        <ul>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li key={id}>
               {title}
               <br />
               {id}
@@ -33,7 +34,9 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
-    </Layout>
-  );
+      </main >
+      <Footer></Footer>
+    </>
+  )
 }
+{/* 繰り返す 記事一覧コンポーネント */ }

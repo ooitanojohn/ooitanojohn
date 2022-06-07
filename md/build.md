@@ -1,3 +1,7 @@
+---
+title: 'build & Test'
+date: '2022-06-07'
+---
 # build && start
 
 - ## 取り合えずビルドしてみた

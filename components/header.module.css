@@ -1,0 +1,12 @@
+/* phone */
+.container {
+  border: 1px solid grey;
+}
+.d_flex {
+  display: flex;
+  gap: 10px;
+}
+
+/* tab */
+
+/* pc */
