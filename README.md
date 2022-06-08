@@ -13,6 +13,6 @@ author: john
 - next.js
 
 ## SNS
-- HTML CSS
+
 
 

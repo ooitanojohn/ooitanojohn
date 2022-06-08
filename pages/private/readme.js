@@ -5,7 +5,6 @@ import Header from '../../components/header'
 import Footer from '../../components/footer'
 import PostLayout from '../../components/postLayout'
 
-
 export async function getStaticProps() { // ページ移動時には実行されている
   const auth = "Accept: application/vnd.github.v3+json" +
     "Authorization: token" + process.env.GITHUB_TOKEN
@@ -32,7 +31,6 @@ export default function Post(profile) {
         <h1>Profile</h1>
         <PostLayout>
           <ul>
-            <li>hey! guys we have get for you</li>
             <li>GitHub {profile.created_at} ~ {profile.updated_at}</li>
             <li>my name is {profile.login}</li>
             <li>{profile.bio}</li>
