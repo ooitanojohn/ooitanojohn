@@ -1,3 +1,10 @@
+---
+title: プリレンダリングとデータフェッチング
+date: 2022/05/09
+description: ビルド時にデータを取得することで静的生成したいならgetStaticProps
+tag: next.js
+author: You
+---
 # プリレンダリングとデータフェッチング
 
 ## ビルド時にデータを取得することで静的生成したいならgetStaticProps
