@@ -10,8 +10,6 @@ function Header({ children }) {
         <ul className={styles.d_flex}>
           <li><Link href="/"><a>home</a></Link></li>
           <li><Link href="/private/readme"><a>readme</a></Link></li>
-          {/* <li><Link href="/test/getServerSideProps"><a>getServerSideProps</a></Link></li> */}
-          <li><Link href="/posts/post"><a>getStaticProps</a></Link></li>
         </ul>
       </nav>
       {children}

@@ -1,6 +1,9 @@
 ---
 title: '環境変数'
 date: '2022-06-07'
+description:
+tag: file
+author: You
 ---
 
 # 環境変数

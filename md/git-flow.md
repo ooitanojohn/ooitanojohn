@@ -1,3 +1,10 @@
+---
+title: 'issue'
+date: '2022-06-07'
+description:
+tag: file
+author: You
+---
 # [blogの制作にあたり git-flowをちゃんと使用する](https://dev.classmethod.jp/articles/introduce-git-flow/)
 
 ## localで master develop feature

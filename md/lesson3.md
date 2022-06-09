@@ -1,3 +1,10 @@
+---
+title: 'issue'
+date: '2022-06-07'
+description:
+tag: file
+author: You
+---
 # 画像,css,meta
 - Next.js には CSS と Sass のサポートが組み込まれています
   - [cssのdoc](https://nextjs.org/docs/basic-features/built-in-css-support)

@@ -1,6 +1,9 @@
 ---
 title: 'ip アドレス確認 && sshで転送'
 date: '2022-06-07'
+description:
+tag: file
+author: You
 ---
 
 # 家PCでgitのAPI検証していたshファイルをsshで転送したくなったので

@@ -15,6 +15,7 @@ export async function getStaticProps() { // ファイルからmd取得
 export default function Index({ allPostsData }) {
   return (
     <>
+      {/* {console.log(allPostsData)} */}
       <Head>
         <title>ooitanojohn</title> {/*title*/}
         <link rel="icon" href="/favicon.ico" /> {/* icon */}
@@ -22,15 +23,14 @@ export default function Index({ allPostsData }) {
       <Header></Header>
       <main>
         <h1 className='display-none'>ooitanojohn is blog</h1>
-        <Link href="./posts/post"><a>記事一覧タイトル</a></Link>
         <ul>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, tag, description, author }) => (
             <li key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
+              <Link href={`/posts/${id}`}><a>
+                {id} - {date} / {tag}
+                <span> [{title}]  {description}</span>
+              </a></Link>
+
             </li>
           ))}
         </ul>
