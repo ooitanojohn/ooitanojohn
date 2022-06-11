@@ -14,7 +14,6 @@ export default function Index({ allPostsData }: {
     tag: string
     author: string
   }[]
-  // children: React.ReactNode;
 }) {
   return (
     <>
@@ -33,7 +32,6 @@ export default function Index({ allPostsData }: {
                 {id} - {date} / {tag}
                 <span> [{title}]  {description}</span>
               </a></Link>
-
             </li>
           ))}
         </ul>

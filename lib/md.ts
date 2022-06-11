@@ -11,20 +11,18 @@ export function getSortedPostsData() {
   // フォルダがあればエラー
   // /posts配下のファイル名を取得する
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
-    // id を取得するためにファイル名から ".md" を削除する
-    const id = fileName.replace(/\.md$/, "");
 
-    // マークダウンファイルを文字列として読み取る
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-
-    // 投稿のメタデータ部分を解析するために gray-matter を使う
-    const matterResult = matter(fileContents);
+const allPostsData = fileNames.map((fileName) => {
+  // id を取得するためにファイル名から ".md" を削除する
+  const id = fileName.replace(/\.md$/, "");
+  // マークダウンファイルを文字列として読み取る
+  const fullPath = path.join(postsDirectory, fileName);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  // 投稿のメタデータ部分を解析するために gray-matter を使う
+  const matterResult = matter(fileContents);
   // console.log(matterResult)
-
     // データを id と合わせる
-    return {
+  return {
       id,
       ...(matterResult.data as {
         date: string;
@@ -35,6 +33,10 @@ export function getSortedPostsData() {
       }),
     };
   });
+  // console.log(typeof allPostsData)
+  // console.log(allPostsData)
+
+
   // 投稿を日付でソートする
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
