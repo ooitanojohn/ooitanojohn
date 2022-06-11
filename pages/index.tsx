@@ -33,7 +33,6 @@ export default function Index({ allPostsData }: {
                 {id} - {date} / {tag}
                 <span> [{title}]  {description}</span>
               </a></Link>
-
             </li>
           ))}
         </ul>
