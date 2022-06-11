@@ -9,7 +9,7 @@ const postsDirectory = path.join(process.cwd(), "md");
 // mdのtop情報を取ってくる関数
 export function getSortedPostsData() {
   // フォルダがあればエラー
-  // /posts　配下のファイル名を取得する
+  // /posts配下のファイル名を取得する
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
     // id を取得するためにファイル名から ".md" を削除する
@@ -21,11 +21,18 @@ export function getSortedPostsData() {
 
     // 投稿のメタデータ部分を解析するために gray-matter を使う
     const matterResult = matter(fileContents);
+  // console.log(matterResult)
 
     // データを id と合わせる
     return {
       id,
-      ...matterResult.data,
+      ...(matterResult.data as {
+        date: string;
+        title: string;
+        description: string;
+        tag: string;
+        author: string;
+      }),
     };
   });
   // 投稿を日付でソートする
@@ -41,20 +48,6 @@ export function getSortedPostsData() {
 // 記事のhead一覧情報をobjectとして返す関数
 export function getAllPostIds() {
   const fileNames = fs.readdirSync(postsDirectory)
-
-  // 以下のような配列を返します:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
   return fileNames.map(fileName => {
     return {
       params: {
@@ -81,7 +74,12 @@ export async function getPostData(id) {
   return {
     id,
     contentHtml,
-    ...matterResult.data
+    ...(matterResult.data as {
+    date: string;
+    title: string;
+    description: string;
+    tag: string;
+    author: string;})
   }
 }
 
