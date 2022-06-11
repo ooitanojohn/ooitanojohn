@@ -14,7 +14,6 @@ export default function Index({ allPostsData }: {
     tag: string
     author: string
   }[]
-  // children: React.ReactNode;
 }) {
   return (
     <>
