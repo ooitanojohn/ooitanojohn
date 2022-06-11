@@ -3,16 +3,19 @@ import Link from 'next/link'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import { getSortedPostsData } from '../lib/md' // md解析
+import { GetStaticProps, GetStaticPaths } from 'next'
 
-export async function getStaticProps() { // ファイルからmd取得
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
-export default function Index({ allPostsData }) {
+export default function Index({ allPostsData }: {
+  allPostsData: {
+    id: string
+    date: string
+    title: string
+    description: string
+    tag: string
+    author: string
+  }[]
+  // children: React.ReactNode;
+}) {
   return (
     <>
       {/* {console.log(allPostsData)} */}
@@ -24,7 +27,7 @@ export default function Index({ allPostsData }) {
       <main>
         <h1 className='display-none'>ooitanojohn is blog</h1>
         <ul>
-          {allPostsData.map(({ id, date, title, tag, description, author }) => (
+          {allPostsData.map(({ id, date, title, description, tag, author }) => (
             <li key={id}>
               <Link href={`/posts/${id}`}><a>
                 {id} - {date} / {tag}
@@ -39,4 +42,13 @@ export default function Index({ allPostsData }) {
     </>
   )
 }
+
 {/* 繰り返す 記事一覧コンポーネント */ }
+export const getStaticProps: GetStaticProps = async () => { // ファイルからmd取得
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}

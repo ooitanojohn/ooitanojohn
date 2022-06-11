@@ -2,7 +2,7 @@ import styles from './footer.module.css'
 import Link from 'next/link'
 
 // footerのレイアウト
-function Footer({ children }) {
+function Footer(){
   return (
     <footer>
       <address className={styles.container}>2022 ooitanojohn</address>

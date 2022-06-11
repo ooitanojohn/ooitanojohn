@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // 記事のレイアウト
-function Header({ children }) {
+function Header() {
   return (
     <header className={styles.container} >
       <nav>
@@ -12,7 +12,6 @@ function Header({ children }) {
           <li><Link href="/private/readme"><a>readme</a></Link></li>
         </ul>
       </nav>
-      {children}
       <h1>ooitanojohn</h1>
       <p><Image src="/images/profile.jpg" alt="top画像" width={100} height={100} /></p>
     </header>
