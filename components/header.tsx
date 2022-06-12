@@ -11,7 +11,6 @@ function Header() {
           <li><Link href="/"><a>home</a></Link></li>
           <li><Link href="/private/readme"><a>readme</a></Link></li>
           <li><Link href="/dist/works"><a>create</a></Link></li>
-          <li><Link href="/test/test"><a>test</a></Link></li>
         </ul>
       </nav>
       <h1>ooitanojohn</h1>

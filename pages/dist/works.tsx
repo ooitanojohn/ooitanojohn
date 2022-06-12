@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from '../../node_modules/next/link'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
-import { GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 import { getGitRepoData } from '../../lib/git'
 
 export default function Works({ repositories }: {
@@ -41,9 +41,9 @@ export default function Works({ repositories }: {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const repositories = await getGitRepoData()
-  // console.log(repositories.data)
+  console.log(repositories.data)
   return {
     props: {
       repositories: repositories.data
