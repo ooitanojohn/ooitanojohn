@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from '../../node_modules/next/link'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
@@ -44,7 +43,7 @@ export default function Works({ repositories }: {
 
 export const getStaticProps: GetStaticProps = async () => {
   const repositories = await getGitRepoData()
-  // console.log(repositories)
+  console.log(`build repositories:${repositories}`)
   return {
     props: {
       repositories: repositories.data
