@@ -43,7 +43,7 @@ export default function Works({ repositories }: {
 
 export const getStaticProps: GetStaticProps = async () => {
   const repositories = await getGitRepoData()
-  // console.log(repositories.data)
+  console.log(repositories.data)
   return {
     props: {
       repositories: repositories.data

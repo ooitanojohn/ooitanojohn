@@ -26,7 +26,7 @@ export async function getGitRepoData() {
   const repositories = await octokit.request('GET /user/repos', {
     visibility: 'public',
     affiliation: 'owner',
-    per_page:10
+    per_page:1
   })//公開リポジトリ一覧取得
 
   // console.log(typeof repositories)
