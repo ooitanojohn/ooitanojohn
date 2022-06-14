@@ -11,21 +11,24 @@ author: You
 # 作業手順
 
 # dir 作成
+
 シェルスクリプトで考える
-pdfにまとめてディレクトリが記述されている
+pdf にまとめてディレクトリが記述されている
 
-mkdirとtouch
-mkdirは被っているとエラー
+mkdir と touch
+mkdir は被っているとエラー
 
-# pdf を textファイルに
-コンソールでtextファイルに変換する
+# pdf を text ファイルに
+
+コンソールで text ファイルに変換する
 apt install poppler-utils
-pdftotext -layout -nopgbrk "PDFファイル"
+pdftotext -layout -nopgbrk "PDF ファイル"
 
-ailasに登録
+ailas に登録
 
-# テキストからphpファイルに変換
-- 変換時にいらない要素 (行頭の数字と」をkaraに変換
+# テキストから php ファイルに変換
+
+- 変換時にいらない要素 (行頭の数字と」を kara に変換
 - ファイルごとに区切って切り取り貼り付けをどう楽にする？
 - ファイル先頭の文字は(
   ファイル名.php
@@ -33,5 +36,5 @@ ailasに登録
   Pted: 2022/04/24 17:10:01
   Printed for: )で確定
 - ページの終わりは</html>
-# 2ページに渡るファイル pdf
 
+# 2 ページに渡るファイル pdf

@@ -6,16 +6,17 @@ tag: file
 author: You
 ---
 
-# 家PCでgitのAPI検証していたshファイルをsshで転送したくなったので
+# 家 PC で git の API 検証していた sh ファイルを ssh で転送したくなったので
 
-## いつもはメールとかslackとかonenoteとかで転送していた
+## いつもはメールとか slack とか onenote とかで転送していた
 
 ## エンジニアっぽくないな？？？
 
-### ということでローカルPC同士通信してファイル送ろう!
+### ということでローカル PC 同士通信してファイル送ろう!
 
 ### ip addr show で確認
-- 10個も出てきた
+
+- 10 個も出てきた
 - 1: lo: <LOOPBACK,UP,LOWER_UP>
 - 2: bond0: <BROADCAST,MULTICAST,MASTER>
 - 3: dummy0: <BROADCAST,NOARP>
@@ -26,4 +27,4 @@ author: You
 - 8: br-a2a9ff909a7c: <BROADCAST,MULTICAST,UP,LOWER_UP>
 - 10: vethb563797@if9: <BROADCAST,MULTICAST,UP,LOWER_UP>
 
-#### よく分からないが5つめ使ってみる
+#### よく分からないが 5 つめ使ってみる

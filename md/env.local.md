@@ -14,7 +14,8 @@ author: You
 
 - [公式](https://nextjs-ja-translation-docs.vercel.app/docs/basic-features/environment-variables)
 - [ojisan バンドル時に環境変数まぎれないんだったらいいな～～～](https://blog.ojisan.io/next-env/)
-- [next系の記事みやすいキカガク社](https://fwywd.com/tech/next-env)
+- [next 系の記事みやすいキカガク社](https://fwywd.com/tech/next-env)
 
 ### node
-- .env.localでとりあえず書くぞ
+
+- .env.local でとりあえず書くぞ

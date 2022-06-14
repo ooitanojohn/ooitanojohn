@@ -5,9 +5,11 @@ description: ビルド時にデータを取得することで静的生成した�
 tag: next.js
 author: You
 ---
+
 # プリレンダリングとデータフェッチング
 
-## ビルド時にデータを取得することで静的生成したいならgetStaticProps
+## ビルド時にデータを取得することで静的生成したいなら getStaticProps
+
 ```js
 export default function Home(props) { ... }
 

@@ -1,0 +1,7 @@
+.flex {
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+.li {
+  margin-right: 10px;
+}
