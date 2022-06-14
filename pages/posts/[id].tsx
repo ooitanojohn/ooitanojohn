@@ -40,7 +40,6 @@ export default function Post({
 
 export const getStaticPaths: GetStaticPaths = async () => { // mdから読み取った idとしてとりうる値のリストを返す
   const paths = getAllPostIds()
-  console.log(paths)
   return {
     paths,
     fallback: false
