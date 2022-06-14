@@ -5,7 +5,7 @@ import Footer from '../components/footer'
 import { getSortedPostsData } from '../lib/md' // md解析
 import { GetStaticProps } from 'next'
 
-export default function Index({ allPostsData }: {
+export default function Index({ allPostsData }:{
   allPostsData: {
     id: string
     date: string

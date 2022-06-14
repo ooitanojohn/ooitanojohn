@@ -40,11 +40,13 @@ export default function Post({
 
 export const getStaticPaths: GetStaticPaths = async () => { // mdから読み取った idとしてとりうる値のリストを返す
   const paths = getAllPostIds()
+  console.log(paths)
   return {
     paths,
     fallback: false
   }
 }
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   // params.id を使用して、ブログの投稿に必要なデータを取得する
   const postData = await getPostData(params.id as string)
