@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Header from '../../components/header'
-import Footer from '../../components/footer'
+import Footer from "../../components/Footer"
 import { GetStaticProps,GetStaticPaths } from 'next'
 import { getAllGitRepoData,getPageGitRepoData } from '../../lib/git'
 import { Pagination } from '../../components/pagination'
