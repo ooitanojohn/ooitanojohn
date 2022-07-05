@@ -1,6 +1,6 @@
 { // コンパイルに関するオプションを設定
   "compilerOptions": {
-    "target": "es5", // ECMAScript target versionを指定
+    "target": "es6", // ECMAScript target versionを指定
     "lib": [ // ビルドする際に含めるlibraryファイル
       "dom",
       "dom.iterable",

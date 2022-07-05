@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../../components/header'
 import PostLayout from '../../components/postLayout'
-import Footer from "../../components/Footer"
+import Footer from "../../components/footer"
 import { getAllPostIds, getPostData } from '../../lib/md'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
