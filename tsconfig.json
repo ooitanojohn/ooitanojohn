@@ -9,7 +9,7 @@
     "allowJs": true, //JSファイルのビルドを可能に
     "noImplicitAny": true, //暗黙のany型をエラーに
     "skipLibCheck": true, //型宣言ファイルの型チェックをスキップする
-    "allowSyntheticDefaultImports": false, //エキスポートしないモジュールからのインポートを許可するか（型チェックのみに影響）
+    "allowSyntheticDefaultImports": true, //エキスポートしないモジュールからのインポートを許可するか（型チェックのみに影響）
     "strict": true, //厳密な型チェックオプションを有効に
     "forceConsistentCasingInFileNames": true, //大文字小文字を区別して参照を解決するようにする
     "noEmit": true, //各々のファイルを別のモジュールとして変換
