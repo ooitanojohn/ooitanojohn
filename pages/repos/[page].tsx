@@ -9,8 +9,8 @@ import { Octokit } from '@octokit/rest'
 
 type PathParams = { // pathの型情報
   page: string
-  totalPage:string
 }
+  // totalPage:string
 type PageProps = { // PagePropsの型情報
     repositories: {
     name: string
@@ -33,7 +33,7 @@ export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
     paths.push({ params: {page:`${i}`} })
   }
   // console.log(paths)
-  return { paths, totalPage,fallback: false };
+  return { paths,fallback: false };
 };
 
 export const getStaticProps: GetStaticProps  = async (context) => {
