@@ -1,5 +1,4 @@
 import { Octokit } from '@octokit/rest'
-import { ParsedUrlQuery } from 'querystring';
 
 const octokit = new Octokit({ // 設定情報のインスタンス化
   accept:'application/vnd.github.v3+json',
@@ -31,17 +30,7 @@ export async function getAllGitRepoData() { // 公開リポジトリ一覧取得
     per_page: 100,
     sort:'created'
   })
-  // console.log(typeof repositories)
-  interface repositories{
-    data: {
-      name: string
-      description:string
-      html_url:string
-      created_at: string
-      updated_at: string
-      pushed_at: string
-    }
-  }
+  // console.log(typeof repositories)w
   return repositories
 }
 
