@@ -8,8 +8,8 @@ import { Pagination } from '../../components/pagination'
 import { Octokit } from '@octokit/rest'
 
 type PathParams = { // pathの型情報
-  page: string ,
-  // totalPage:number
+  page: string
+  totalPage:string
 }
 type PageProps = { // PagePropsの型情報
     repositories: {
@@ -32,9 +32,8 @@ export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
   for (let i = 1; pages >= i; i++) {
     paths.push({ params: {page:`${i}`} })
   }
-  // paths.push({params: {totalPage:totalPage}})
   // console.log(paths)
-  return { paths, fallback: false };
+  return { paths, totalPage,fallback: false };
 };
 
 export const getStaticProps: GetStaticProps  = async (context) => {
